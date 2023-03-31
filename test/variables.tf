@@ -1,5 +1,5 @@
 variable "region" {
-  default = "eu-west-2.amazonaws.com"
+  default = "eu-west-2"
   description = "AWS region"
 }
 
