@@ -30,7 +30,7 @@ resource "aws_vpc" "tfc_kbtest_vpc" {
 resource "aws_subnet" "tfc_kbtest_subnet_A" {
   vpc_id = aws_vpc.tfc_kbtest_vpc.id
   cidr_block = "10.0.0.0/24"
-  availability_zone = "ap-northeast-2a"
+  availability_zone = "eu-west-2a"
   tags = {
     "Name" = "tfc_kbtest_subnet_A"
   }
@@ -39,7 +39,7 @@ resource "aws_subnet" "tfc_kbtest_subnet_A" {
 resource "aws_subnet" "tfc_kbtest_subnet_B" {
   vpc_id = aws_vpc.tfc_kbtest_vpc.id
   cidr_block = "10.0.10.0/24"
-  availability_zone = "ap-northeast-2b"
+  availability_zone = "eu-west-2b"
   tags = {
     "Name" = "tfc_kbtest_subnet_B"
   }
